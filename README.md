@@ -23,6 +23,7 @@ API Endpoints:
 Last.fm API
   * user.getRecentTracks: retrieves listening history
   * track.getTopTags: fetches top tags for each track
+
 Data Processing:
 
 * Retrieve JSON data from Last.fm API endpoints.
