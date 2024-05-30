@@ -10,7 +10,7 @@ def etl_process():
     import time
 
     listens = pd.read_csv("Ewaoluwa.csv")
-    API_KEY = 'aa67bd14bbef2d0cc14a3bfaaa10517f'
+    API_KEY = '**********'
     USER_AGENT = 'Ewaoluwa'
     user='ewaoluwa'
     unix_time = int(listens.iloc[0]['unix_time'])
@@ -79,7 +79,7 @@ default_args = {
     'owner': 'Ewa',
     'depends_on_past': False,
     'start_date': datetime(2024, 5, 27),
-    'email': ['osunrayij6@gmail.com'],
+    'email': ['airflow@email.com'],
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
