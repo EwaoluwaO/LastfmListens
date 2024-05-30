@@ -1,7 +1,15 @@
 # LastfmListens
 ## Project Overview
 
-This project visualizes music listening history from Last.fm to reveal fascinating insights about personal listening habits. It's built using Python for data retrieval and cleaning, and Tableau for creating interactive visualizations.
+This project aims to visualize music listening history from Last.fm, uncovering intriguing insights about personal listening habits. It utilizes Python for data retrieval and cleaning, and Tableau for crafting interactive visualizations.
+
+The data is processed using an Extract, Transform, Load (ETL) procedure:
+
+* Extract: Read existing data from a CSV file and identify new listens by comparing them to the most recent date.
+* Transform: Process and clean the new data.
+* Load: Update the CSV file with the new information.
+
+This ETL process is automated to run daily using Apache Airflow by scheduling a Directed Acyclic Graph (DAG).
 
 ## Key Features:
 
